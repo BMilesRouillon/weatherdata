@@ -1,0 +1,14 @@
+Package: weatherdata
+Title: Structure of a Package for Reading and Analyzing Meteorological Station Data
+Version: 0.0.0.9000
+Authors@R: 
+    person("Benjamin", "Miles Rouillon", , "bmiles@mail.austral.edu.ar", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person("Facundo", "Rubiolo", , "frubiolo@mail.austral.edu.ar", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))   
+Description: The package is designed to provide tools for efficiently handling meteorological station data. The structure is organized to facilitate modularity, ease of use, and maintainability. 
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
