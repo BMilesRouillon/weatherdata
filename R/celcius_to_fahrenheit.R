@@ -14,3 +14,4 @@
 convertir_C_a_F <- function(temp_centigrados) {
   (temp_centigrados + 32) * 9/5
 }
+
