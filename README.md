@@ -4,6 +4,9 @@
 # weatherdata
 
 <!-- badges: start -->
+
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 The goal of weatherdata is to manipulate temperature data
@@ -21,10 +24,3 @@ pak::pak("BMilesRouillon/weatherdata")
 ## Example
 
 This is a basic example which shows you how to solve a common problem:
-
-``` r
-library(weatherdata)
-## basic example code
-convertir_C_a_F(20)
-#> [1] 93.6
-```

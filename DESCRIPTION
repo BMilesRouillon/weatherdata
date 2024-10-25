@@ -15,10 +15,13 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 URL: https://github.com/BMilesRouillon/weatherdata, https://bmilesrouillon.github.io/weatherdata/
 BugReports: https://github.com/BMilesRouillon/weatherdata/issues
-Suggests: 
+VignetteBuilder: knitr
+Imports:
+    dplyr,
+    tidyr
+Suggests:
+    ggplot2,
+    testthat (>= 3.0.0),
     knitr,
     rmarkdown
-VignetteBuilder: knitr
-Imports: 
-    readr
-   
+Config/testthat/edition: 3
