@@ -11,7 +11,7 @@
 #' convertir_C_a_F(20)
 #'
 #' @export
-convertir_C_a_F <- function(temp_centigrados) {
+celcius_to_fahrenheit <- function(temp_centigrados) {
   (temp_centigrados + 32) * 9/5
 }
 
