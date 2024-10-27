@@ -34,6 +34,7 @@ download_and_read_weatherdata <- function() {
   usethis::use_data(weather_data, overwrite = TRUE)
 
 
+
   return(weather_data)
 }
 

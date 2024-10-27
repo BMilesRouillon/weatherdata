@@ -12,8 +12,8 @@
 #' @examples
 #' generate_40_year_average_temperature_plot("NH0472")
 #'
-#' @import ggplot2
 #' @import dplyr
+#' @import ggplot2
 #' @export
 generate_40_year_average_temperature_plot <- function(id) {
   data(weatherdata, envir = environment())
@@ -29,14 +29,14 @@ generate_40_year_average_temperature_plot <- function(id) {
   station_data$period <- floor(as.numeric(station_data$year) / 40) * 40
   monthly_avg_temp <- station_data %>%
     group_by(period, month) %>%
-    summarise(avg_temperature = mean(temperatura_abrigo_150cm, na.rm = TRUE)) %>%
-    ungroup()
+    summarise(avg_temperature = mean(temperatura_abrigo_150cm, na.rm = TRUE))
+
   plot <- ggplot(monthly_avg_temp, aes(x = month, y = avg_temperature, fill = factor(period))) +
     geom_bar(stat = "identity", position = "dodge", color = "black") +
     scale_fill_brewer(palette = "Set3") +  # Assign colors
     labs(title = paste("Average Monthly Temperature for Station", id),
          x = "Month ",
-         y = "Average Temperature (°C)",
+         y = "Average Temperature (<c2><b0>C)",
          fill = "40-Year Period") +
     scale_x_discrete(labels = c("01" = "January", "02" = "February", "03" = "March",
                                 "04" = "April", "05" = "May", "06" = "June",
@@ -44,6 +44,7 @@ generate_40_year_average_temperature_plot <- function(id) {
                                 "10" = "October", "11" = "November", "12" = "December")) +
     theme_minimal() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1))
+    utils::globalVariables(c("avg_temperature", "weatherdata", "month", "period"))
 
   return(plot)
 }

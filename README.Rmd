@@ -37,6 +37,6 @@ This is a basic example which shows you how to solve a common problem:
 ```{r example}
 library(weatherdata)
 ## basic example code
-convertir_C_a_F(20)
+
 ```
 

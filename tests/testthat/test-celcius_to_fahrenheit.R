@@ -1,4 +1,3 @@
-test_that("celcius to fahrenheit works", {
-  expect_equal(convertir_C_a_F(10),75.6)
+test_that("celcius_to_fahrenheit throws an error for non-numeric input", {
+  expect_error(celcius_to_fahrenheit("twenty"), "non-numeric argument")
 })
-

@@ -18,9 +18,10 @@ BugReports: https://github.com/BMilesRouillon/weatherdata/issues
 VignetteBuilder: knitr
 Imports:
     dplyr,
-    tidyr
-Suggests:
     ggplot2,
+    usethis,
+    utils
+Suggests:
     testthat (>= 3.0.0),
     knitr,
     rmarkdown

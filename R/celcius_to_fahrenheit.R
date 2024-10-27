@@ -1,6 +1,6 @@
 #' *Celcius To Farenheit*
 #'
-#'This function `convertir_C_a_F()`converts a temperature given in Celsius to Fahrenheit.
+#'This function `celcius_to_fahrenheit()`converts a temperature given in Celsius to Fahrenheit.
 #'
 #'This are extra details
 #'
@@ -8,7 +8,7 @@
 #'
 #' @return A numeric value representing the temperature in Fahrenheit.
 #' @examples
-#' convertir_C_a_F(20)
+#' celcius_to_fahrenheit(20)
 #'
 #' @export
 celcius_to_fahrenheit <- function(temp_centigrados) {

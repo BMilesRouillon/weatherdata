@@ -13,12 +13,12 @@ celcius_to_fahrenheit(temp_centigrados)
 A numeric value representing the temperature in Fahrenheit.
 }
 \description{
-This function \code{convertir_C_a_F()}converts a temperature given in Celsius to Fahrenheit.
+This function \code{celcius_to_fahrenheit()}converts a temperature given in Celsius to Fahrenheit.
 }
 \details{
 This are extra details
 }
 \examples{
-convertir_C_a_F(20)
+celcius_to_fahrenheit(20)
 
 }
