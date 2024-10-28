@@ -1,6 +1,6 @@
 #' *Farenheit To Celcius*
 #'
-#'This function `fahrenheit_to_celsius` converts a temperature given in Farenheit to Celcius.
+#'This function `fahrenheit_to_celcius` converts a temperature given in Farenheit to Celcius.
 #'
 #'This are extra details
 #'
@@ -11,7 +11,7 @@
 #' fahrenheit_to_celsius(50)
 #'
 #' @export
-fahrenheit_to_celsius<- function(temperature_fahrenheit) {
+fahrenheit_to_celcius<- function(temperature_fahrenheit) {
 
   if (!is.numeric(temperature_fahrenheit)) {
     stop("temperature_fahrenheit must be numeric,\n",

@@ -6,4 +6,3 @@
 ^pkgdown$
 ^\.github$
 ^LICENSE\.md$
-^data-raw$
