@@ -27,13 +27,7 @@ download_and_read_weatherdata <- function() {
   station_0098 <- read.csv(url(urls[5]))
   station_0437 <- read.csv(url(urls[6]))
 
-
   weather_data <- rbind(station_0472, station_0910, station_0046, station_0098, station_0437)
-
-
-  usethis::use_data(weather_data, overwrite = TRUE)
-
-
 
   return(weather_data)
 }

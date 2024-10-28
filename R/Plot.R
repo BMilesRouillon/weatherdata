@@ -16,8 +16,8 @@
 #' @import ggplot2
 #' @export
 generate_40_year_average_temperature_plot <- function(id) {
-  data(weatherdata, envir = environment())
-  station_data <- subset(weatherdata, id == id)
+  data(weather_data, envir = environment())
+  station_data <- subset(weather_data, id == id)
 
 
   if (!inherits(station_data$fecha, "Date")) {
@@ -44,7 +44,6 @@ generate_40_year_average_temperature_plot <- function(id) {
                                 "10" = "October", "11" = "November", "12" = "December")) +
     theme_minimal() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1))
-    utils::globalVariables(c("avg_temperature", "weatherdata", "month", "period"))
 
   return(plot)
 }
