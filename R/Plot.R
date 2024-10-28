@@ -36,7 +36,7 @@ generate_40_year_average_temperature_plot <- function(id) {
     scale_fill_brewer(palette = "Set3") +  # Assign colors
     labs(title = paste("Average Monthly Temperature for Station", id),
          x = "Month ",
-         y = "Average Temperature (<c2><b0>C)",
+         y = "Average Temperature",
          fill = "40-Year Period") +
     scale_x_discrete(labels = c("01" = "January", "02" = "February", "03" = "March",
                                 "04" = "April", "05" = "May", "06" = "June",
