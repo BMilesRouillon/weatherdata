@@ -8,7 +8,7 @@
 #'
 #' @return A numeric value representing the temperature in Celcius.
 #' @examples
-#' fahrenheit_to_celsius(50)
+#' fahrenheit_to_celcius(50)
 #'
 #' @export
 fahrenheit_to_celcius<- function(temperature_fahrenheit) {

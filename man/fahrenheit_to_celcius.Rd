@@ -19,6 +19,6 @@ This function \code{fahrenheit_to_celcius} converts a temperature given in Faren
 This are extra details
 }
 \examples{
-fahrenheit_to_celsius(50)
+fahrenheit_to_celcius(50)
 
 }
