@@ -18,6 +18,14 @@ knitr::opts_chunk$set(
 library(weatherdata)
 ```
 
+## About the Functions
 
+### How to Use the `celsius_to_fahrenheit` Function
 
+The **\``` celsius_to_fahrenheit()` ``** function converts temperatures from Celsius to Fahrenheit. This function accepts a numeric input representing the temperature in Celsius and returns the corresponding temperature in Fahrenheit.
 
+```{r}
+celcius_to_fahrenheit(20)
+```
+
+### How to Use the `fahrengeit_to_celcius` Function

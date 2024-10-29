@@ -13,7 +13,9 @@ knitr::opts_chunk$set(
 )
 ```
 
-# weatherdata ![](images/Designer%20(1)-01.jpeg){width="43"}
+
+
+# WeatherData <img src="man/figures/logo.jpeg" align="right" height="139"/>
 
 <!-- badges: start -->
 

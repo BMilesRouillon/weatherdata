@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# weatherdata <img src="images/Designer%20(1)-01.jpeg" width="43" />
+# WeatherData <img src="man/figures/logo.jpeg" align="right" height="139"/>
 
 <!-- badges: start -->
 
