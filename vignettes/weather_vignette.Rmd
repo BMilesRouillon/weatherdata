@@ -14,6 +14,12 @@ knitr::opts_chunk$set(
 )
 ```
 
+## Welcome to the vignette
+
+Here you will get information about the functions
+
+### First run this code 
+
 ```{r setup}
 library(weatherdata)
 ```
@@ -24,8 +30,46 @@ library(weatherdata)
 
 The **\``` celsius_to_fahrenheit()` ``** function converts temperatures from Celsius to Fahrenheit. This function accepts a numeric input representing the temperature in Celsius and returns the corresponding temperature in Fahrenheit.
 
+#### Parameters:
+
+-   **`temp_centigrados`**: A numeric value representing the temperature in Celsius that will be converted to Fahrenheit.
+
 ```{r}
 celcius_to_fahrenheit(20)
 ```
 
-### How to Use the `fahrengeit_to_celcius` Function
+### How to Use the `fahrenheit_to_celcius` Function
+
+The \`**`` fahrenheit_to_celsius` ``**function converts temperatures from Fahrenheit to Celsius. This function accepts a numeric input representing the temperature in Fahrenheit and returns the corresponding temperature in Celsius.
+
+#### Parameters:
+
+-   **`temperature_fahrenheit`**: A numeric value representing the temperature in Fahrenheit that will be converted to Celsius.
+
+```{r}
+fahrenheit_to_celcius(50)
+```
+
+### How to Use the **`plot`** Function
+
+The **`plot()`** function creates a bar plot that shows the average monthly temperature for a specified weather station over 40-year intervals. This visualization allows users to compare average temperatures across each month over different 40-year periods, providing a clear view of long-term temperature patterns for the station.
+
+#### Parameters:
+
+-   **`id`**: A character string that specifies the ID of the weather station for which the plot is to be generated. This ID should match one of the station IDs present in the `weatherdata` dataset to ensure accurate data retrieval.
+
+```{r}
+generate_40_year_average_temperature_plot("NH0472")
+```
+
+### How to Use the `download_and_read_weatherdata` Function
+
+The `download_and_read_weatherdata()` function retrieves meteorological data from a set of predefined URLs, which correspond to different weather stations. After downloading the data, it combines these datasets into a single data frame for easier analysis and processing.
+
+#### Parameters:
+
+This function does not take any parameters, as it uses a predefined list of URLs to fetch data.
+
+```{r}
+download_and_read_weatherdata()
+```
