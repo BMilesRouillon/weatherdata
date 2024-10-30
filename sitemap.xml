@@ -1,19 +1,19 @@
 <urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
-<url><loc>https://bmilesrouillon.github.io/weatherdata/404.html</loc></url>
-<url><loc>https://bmilesrouillon.github.io/weatherdata/CODE_OF_CONDUCT.html</loc></url>
-<url><loc>https://bmilesrouillon.github.io/weatherdata/CONTRIBUTING.html</loc></url>
-<url><loc>https://bmilesrouillon.github.io/weatherdata/LICENSE-text.html</loc></url>
-<url><loc>https://bmilesrouillon.github.io/weatherdata/LICENSE.html</loc></url>
-<url><loc>https://bmilesrouillon.github.io/weatherdata/articles/index.html</loc></url>
-<url><loc>https://bmilesrouillon.github.io/weatherdata/articles/weather_vignette.html</loc></url>
-<url><loc>https://bmilesrouillon.github.io/weatherdata/authors.html</loc></url>
-<url><loc>https://bmilesrouillon.github.io/weatherdata/index.html</loc></url>
-<url><loc>https://bmilesrouillon.github.io/weatherdata/reference/celcius_to_fahrenheit.html</loc></url>
-<url><loc>https://bmilesrouillon.github.io/weatherdata/reference/download_and_read_weatherdata.html</loc></url>
-<url><loc>https://bmilesrouillon.github.io/weatherdata/reference/fahrenheit_to_celcius.html</loc></url>
-<url><loc>https://bmilesrouillon.github.io/weatherdata/reference/generate_40_year_average_temperature_plot.html</loc></url>
-<url><loc>https://bmilesrouillon.github.io/weatherdata/reference/index.html</loc></url>
-<url><loc>https://bmilesrouillon.github.io/weatherdata/reference/weather_data.html</loc></url>
-<url><loc>https://bmilesrouillon.github.io/weatherdata/reference/weatherdata-package.html</loc></url>
+<url><loc>/404.html</loc></url>
+<url><loc>/CODE_OF_CONDUCT.html</loc></url>
+<url><loc>/CONTRIBUTING.html</loc></url>
+<url><loc>/LICENSE-text.html</loc></url>
+<url><loc>/LICENSE.html</loc></url>
+<url><loc>/articles/index.html</loc></url>
+<url><loc>/articles/weather_vignette.html</loc></url>
+<url><loc>/authors.html</loc></url>
+<url><loc>/index.html</loc></url>
+<url><loc>/reference/celcius_to_fahrenheit.html</loc></url>
+<url><loc>/reference/download_and_read_weatherdata.html</loc></url>
+<url><loc>/reference/fahrenheit_to_celcius.html</loc></url>
+<url><loc>/reference/generate_40_year_average_temperature_plot.html</loc></url>
+<url><loc>/reference/index.html</loc></url>
+<url><loc>/reference/weather_data.html</loc></url>
+<url><loc>/reference/weatherdata-package.html</loc></url>
 </urlset>
 
