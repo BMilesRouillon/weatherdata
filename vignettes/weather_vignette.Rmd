@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 
 Here you will get information about the functions
 
-### First run this code 
+### First run this code
 
 ```{r setup}
 library(weatherdata)
@@ -70,6 +70,4 @@ The `download_and_read_weatherdata()` function retrieves meteorological data fro
 
 This function does not take any parameters, as it uses a predefined list of URLs to fetch data.
 
-```{r}
-download_and_read_weatherdata()
-```
+
