@@ -10,7 +10,8 @@ vignette: >
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
+  comment = "#>",
+  error = TRUE
 )
 ```
 
@@ -40,7 +41,7 @@ celcius_to_fahrenheit(20)
 
 ### How to Use the `fahrenheit_to_celcius` Function
 
-The \`**`` fahrenheit_to_celsius` ``**function converts temperatures from Fahrenheit to Celsius. This function accepts a numeric input representing the temperature in Fahrenheit and returns the corresponding temperature in Celsius.
+The **`` fahrenheit_to_celsius` ``**function converts temperatures from Fahrenheit to Celsius. This function accepts a numeric input representing the temperature in Fahrenheit and returns the corresponding temperature in Celsius.
 
 #### Parameters:
 
@@ -50,16 +51,16 @@ The \`**`` fahrenheit_to_celsius` ``**function converts temperatures from Fahren
 fahrenheit_to_celcius(50)
 ```
 
-### How to Use the **`plot`** Function
+### How to Use the **`get_meteorological_summary`** Function
 
-The **`plot()`** function creates a bar plot that shows the average monthly temperature for a specified weather station over 40-year intervals. This visualization allows users to compare average temperatures across each month over different 40-year periods, providing a clear view of long-term temperature patterns for the station.
+The **`get_meteorological_summary()`** function calculates and returns key meteorological statistics for a specified weather station identified by its unique id. It provides the mean temperature, maximum temperature, minimum temperature, and average relative humidity for the given station. The function filters the dataset based on the provided id, computes these summary values, and returns them in a named numeric vector. If no data is found for the provided id, an error is raised to notify the user. This function is useful for quickly obtaining important meteorological information for analysis or reporting purposes.
 
 #### Parameters:
 
 -   **`id`**: A character string that specifies the ID of the weather station for which the plot is to be generated. This ID should match one of the station IDs present in the `weatherdata` dataset to ensure accurate data retrieval.
 
 ```{r}
-generate_40_year_average_temperature_plot("NH0472")
+get_meteorological_summary("NH0046")
 ```
 
 ### How to Use the `download_and_read_weatherdata` Function

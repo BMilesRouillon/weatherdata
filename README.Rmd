@@ -9,7 +9,8 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
-  out.width = "100%"
+  out.width = "100%",
+  error = TRUE  
 )
 ```
 
@@ -60,10 +61,10 @@ celcius_to_fahrenheit(20)
 fahrenheit_to_celcius(50)
 ```
 
-## Example Plot meterologic
+## Example meteorological summary
 
-```{r}
-generate_40_year_average_temperature_plot("NH0472")
+```{r, echo=TRUE}
+get_meteorological_summary("NH0046")
 ```
 
 ## Getting Help

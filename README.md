@@ -61,13 +61,12 @@ fahrenheit_to_celcius(50)
 #> [1] 10
 ```
 
-## Example Plot meterologic
+## Example meteorological summary
 
 ``` r
-generate_40_year_average_temperature_plot("NH0472")
+get_meteorological_summary("NH0046")
+#> Error in get_meteorological_summary("NH0046"): no se pudo encontrar la función "get_meteorological_summary"
 ```
-
-<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
 
 ## Getting Help
 
