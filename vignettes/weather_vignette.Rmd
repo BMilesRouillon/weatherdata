@@ -69,6 +69,14 @@ The `download_and_read_weatherdata()` function retrieves meteorological data fro
 
 #### Parameters:
 
-This function does not take any parameters, as it uses a predefined list of URLs to fetch data.
+*id* (optional):
+
+Specifies the meteorological station ID to download.
+If NULL (default), data from all available stations will be downloaded.
+
+*save_dir* (optional):
+
+Defines the directory where the downloaded files will be saved.
+These parameters allow flexibility in selecting specific station data and controlling file storage location.
 
 

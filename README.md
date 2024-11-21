@@ -58,7 +58,7 @@ celcius_to_fahrenheit(20)
 
 ``` r
 fahrenheit_to_celcius(50)
-#> [1] 10
+#> Error in fahrenheit_to_celcius(50): no se pudo encontrar la función "fahrenheit_to_celcius"
 ```
 
 ## Example meteorological summary
@@ -67,6 +67,24 @@ fahrenheit_to_celcius(50)
 get_meteorological_summary("NH0046")
 #> Error in get_meteorological_summary("NH0046"): no se pudo encontrar la función "get_meteorological_summary"
 ```
+
+The `download_and_read_weatherdata()` function retrieves meteorological
+data from a set of predefined URLs, which correspond to different
+weather stations. After downloading the data, it combines these datasets
+into a single data frame for easier analysis and processing.
+
+The function takes two parameters:
+
+id (optional):
+
+Specifies the meteorological station ID to download. If NULL (default),
+data from all available stations will be downloaded. save_dir
+(optional):
+
+Defines the directory where the downloaded files will be saved. Defaults
+to the current working directory (“.”). These parameters allow
+flexibility in selecting specific station data and controlling file
+storage location.
 
 ## Getting Help
 

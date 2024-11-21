@@ -2,22 +2,26 @@
 % Please edit documentation in R/download_and_read_weatherdata.R
 \name{download_and_read_weatherdata}
 \alias{download_and_read_weatherdata}
-\title{\emph{Download and Read Weather Data}}
+\title{Download and Read Weather Data}
 \usage{
-download_and_read_weatherdata()
+download_and_read_weatherdata(
+  station_ids = c("NH0472", "NH0910", "NH0046", "NH0098", "NH0437"),
+  save_dir = "data/"
+)
+}
+\arguments{
+\item{station_ids}{A vector of station IDs to download. Default is all available stations.}
+
+\item{save_dir}{A string specifying the directory where the files should be saved.}
 }
 \value{
-A data frame containing the combined data from multiple meteorological stations.
+A data frame containing the combined data from the specified meteorological stations.
 }
 \description{
-The function \code{download_and_read_weatherdata()} downloads meteorological data from specified URLs
-and combines the datasets into a single data frame. The function reads data directly from the
-provided URLs.
-}
-\details{
-This function fetches data from various meteorological stations and combines them for further analysis.
+The function \code{download_and_read_weatherdata()} downloads meteorological data for specified station IDs
+and saves them to a specified location. The data is then read into R and combined into a single data frame.
 }
 \examples{
-download_and_read_weatherdata()
+download_and_read_weatherdata(c("NH0472", "NH0910"), save_dir = "data/")
 
 }

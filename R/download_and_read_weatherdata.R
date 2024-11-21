@@ -1,37 +1,45 @@
-#' *Download and Read Weather Data*
+#' Download and Read Weather Data
 #'
-#' The function `download_and_read_weatherdata()` downloads meteorological data from specified URLs
-#' and combines the datasets into a single data frame. The function reads data directly from the
-#' provided URLs.
+#' The function `download_and_read_weatherdata()` downloads meteorological data for specified station IDs
+#' and saves them to a specified location. The data is then read into R and combined into a single data frame.
 #'
-#' This function fetches data from various meteorological stations and combines them for further analysis.
+#' @param station_ids A vector of station IDs to download. Default is all available stations.
+#' @param save_dir A string specifying the directory where the files should be saved.
 #'
-#' @return A data frame containing the combined data from multiple meteorological stations.
+#' @return A data frame containing the combined data from the specified meteorological stations.
 #' @examples
-#' download_and_read_weatherdata()
+#' download_and_read_weatherdata(c("NH0472", "NH0910"), save_dir = "data/")
 #'
 #' @export
-download_and_read_weatherdata <- function() {
-    urls <- c(
-    "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/metadatos_completos.csv",
-    "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0472.csv",
-    "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0910.csv",
-    "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0046.csv",
-    "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0098.csv",
-    "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0437.csv"
-  )
-  metadata <- read.csv(url(urls[1]))
-  station_0472 <- read.csv(url(urls[2]))
-  station_0910 <- read.csv(url(urls[3]))
-  station_0046 <- read.csv(url(urls[4]))
-  station_0098 <- read.csv(url(urls[5]))
-  station_0437 <- read.csv(url(urls[6]))
+download_and_read_weatherdata <- function(station_ids = c("NH0472", "NH0910", "NH0046", "NH0098", "NH0437"), save_dir = "data/") {
+  base_url <- "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/"
 
-  weather_data <- rbind(station_0472, station_0910, station_0046, station_0098, station_0437)
+  if (!dir.exists(save_dir)) {
+    dir.create(save_dir, recursive = TRUE)
+  }
+
+  metadata_url <- paste0(base_url, "metadatos_completos.csv")
+  metadata_path <- file.path(save_dir, "metadatos_completos.csv")
+  download.file(metadata_url, metadata_path, quiet = TRUE)
+
+
+  weather_data_list <- list()
+
+  for (station_id in station_ids) {
+    station_url <- paste0(base_url, station_id, ".csv")
+    station_path <- file.path(save_dir, paste0(station_id, ".csv"))
+
+
+    download.file(station_url, station_path, quiet = TRUE)
+
+    station_data <- read.csv(station_path)
+    weather_data_list[[station_id]] <- station_data
+  }
+
+  weather_data <- do.call(rbind, weather_data_list)
 
   return(weather_data)
 }
-
 
 
 
