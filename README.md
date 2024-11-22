@@ -58,15 +58,27 @@ celcius_to_fahrenheit(20)
 
 ``` r
 fahrenheit_to_celcius(50)
-#> Error in fahrenheit_to_celcius(50): no se pudo encontrar la función "fahrenheit_to_celcius"
+#> [1] 10
 ```
 
 ## Example meteorological summary
 
 ``` r
 get_meteorological_summary("NH0046")
-#> Error in get_meteorological_summary("NH0046"): no se pudo encontrar la función "get_meteorological_summary"
+#> $`Mean temperature (Celsius):`
+#> [1] 17.28705
+#> 
+#> $`Maximum temperature (Celsius):`
+#> [1] 41.5
+#> 
+#> $`Minimum temperature (Celsius):`
+#> [1] -15
+#> 
+#> $`Average humidity (%):`
+#> [1] 74.04066
 ```
+
+## `download_and_read_weatherdata()`
 
 The `download_and_read_weatherdata()` function retrieves meteorological
 data from a set of predefined URLs, which correspond to different
