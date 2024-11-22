@@ -118,14 +118,29 @@
 </h2>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/fahrenheit_to_celcius.html">fahrenheit_to_celcius</a></span><span class="op">(</span><span class="fl">50</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Error in fahrenheit_to_celcius(50): no se pudo encontrar la función "fahrenheit_to_celcius"</span></span></code></pre></div>
+<span><span class="co">#&gt; [1] 10</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="example-meteorological-summary">Example meteorological summary<a class="anchor" aria-label="anchor" href="#example-meteorological-summary"></a>
 </h2>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/get_meteorological_summary.html">get_meteorological_summary</a></span><span class="op">(</span><span class="st">"NH0046"</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Error in get_meteorological_summary("NH0046"): no se pudo encontrar la función "get_meteorological_summary"</span></span></code></pre></div>
+<span><span class="co">#&gt; $`Mean temperature (Celsius):`</span></span>
+<span><span class="co">#&gt; [1] 17.28705</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; $`Maximum temperature (Celsius):`</span></span>
+<span><span class="co">#&gt; [1] 41.5</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; $`Minimum temperature (Celsius):`</span></span>
+<span><span class="co">#&gt; [1] -15</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; $`Average humidity (%):`</span></span>
+<span><span class="co">#&gt; [1] 74.04066</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="download_and_read_weatherdata">
+<code>download_and_read_weatherdata()</code><a class="anchor" aria-label="anchor" href="#download_and_read_weatherdata"></a>
+</h2>
 <p>The <code><a href="reference/download_and_read_weatherdata.html">download_and_read_weatherdata()</a></code> function retrieves meteorological data from a set of predefined URLs, which correspond to different weather stations. After downloading the data, it combines these datasets into a single data frame for easier analysis and processing.</p>
 <p>The function takes two parameters:</p>
 <p>id (optional):</p>
